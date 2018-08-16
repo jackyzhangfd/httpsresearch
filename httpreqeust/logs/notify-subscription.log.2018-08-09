@@ -1,0 +1,37 @@
+2018-08-09 09:36:23,301 - https request error:{}
+java.io.IOException: DerInputStream.getLength(): lengthTag=109, too big.
+	at sun.security.util.DerInputStream.getLength(DerInputStream.java:561)
+	at sun.security.util.DerValue.init(DerValue.java:365)
+	at sun.security.util.DerValue.<init>(DerValue.java:320)
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:1882)
+	at java.security.KeyStore.load(KeyStore.java:1445)
+	at www.autobusi.httpreqeust.SSLClientAndServerAuthentigation1.httpRequest(SSLClientAndServerAuthentigation1.java:67)
+	at www.autobusi.httpreqeust.SSLClientAndServerAuthentigation1.main(SSLClientAndServerAuthentigation1.java:40)
+2018-08-09 09:37:35,061 - https request error:{}
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: No trusted certificate found
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1937)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1478)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1050)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1363)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1391)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1375)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
+	at www.autobusi.httpreqeust.SSLClientAndServerAuthentigation1.httpRequest(SSLClientAndServerAuthentigation1.java:89)
+	at www.autobusi.httpreqeust.SSLClientAndServerAuthentigation1.main(SSLClientAndServerAuthentigation1.java:40)
+Caused by: sun.security.validator.ValidatorException: No trusted certificate found
+	at sun.security.validator.SimpleValidator.buildTrustedChain(SimpleValidator.java:384)
+	at sun.security.validator.SimpleValidator.engineValidate(SimpleValidator.java:133)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1460)
+	... 12 more

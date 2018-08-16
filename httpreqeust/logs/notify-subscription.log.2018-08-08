@@ -1,0 +1,14 @@
+2018-08-08 11:25:01,789 - https request error:{}
+java.io.IOException: Server returned HTTP response code: 401 for URL: https://ldcicip.wdf.sap.corp:44300/sap/opu/odata/sap/PDS_UTCOVERAGE_CDS/PDS_UTCOVERAGE?$filter=running_date%20eq%20datetime%272018-08-07T00:00:00%27
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1839)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at www.autobusi.httpreqeust.SSLClientAndServerAuthentigation1.httpRequest(SSLClientAndServerAuthentigation1.java:100)
+	at www.autobusi.httpreqeust.SSLClientAndServerAuthentigation1.main(SSLClientAndServerAuthentigation1.java:39)
+2018-08-08 11:26:07,291 - https request error:{}
+java.io.IOException: Server returned HTTP response code: 401 for URL: https://ldcicip.wdf.sap.corp:44300/sap/opu/odata/sap/PDS_UTCOVERAGE_CDS/PDS_UTCOVERAGE?$filter=running_date%20eq%20datetime%272018-08-07T00:00:00%27
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1839)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at www.autobusi.httpreqeust.SSLClientAndServerAuthentigation1.httpRequest(SSLClientAndServerAuthentigation1.java:100)
+	at www.autobusi.httpreqeust.SSLClientAndServerAuthentigation1.main(SSLClientAndServerAuthentigation1.java:39)
