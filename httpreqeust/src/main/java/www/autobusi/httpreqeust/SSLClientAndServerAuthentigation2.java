@@ -44,7 +44,7 @@ public class SSLClientAndServerAuthentigation2 {
                 .build();
         SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(
                 sslcontext,
-                new String[]{"TLSv1.2"},
+                new String[]{"TLSv1","TLSv1.1","TLSv1.2"},
                 null,
                 SSLConnectionSocketFactory.getDefaultHostnameVerifier());
         CloseableHttpClient httpclient = HttpClients.custom()
@@ -53,9 +53,9 @@ public class SSLClientAndServerAuthentigation2 {
  
         try {
             //HttpGet httpget = new HttpGet("https://bctmain.wdf.sap.corp/sap/bc/devdb/my_saved_search?sap-client=001&format=json");
-            //HttpGet httpget = new HttpGet("https://ldcicix.wdf.sap.corp:44300/sap/opu/odata/sap/CBLD_PROJ_ANALYTIC_SRV/$metadata?sap-client=200&sap-language=EN");
-        	HttpGet httpget = new HttpGet("https://solmancf1-approuter-pds.cfapps.sap.hana.ondemand.com/pds/api/v1/utc/loadedutcdates");
-        	//httpget.addHeader("X-Uaa-Csrf", "UtnrzDMzP2SazJZR1bVLK8");
+            HttpGet httpget = new HttpGet("https://ldcicix.wdf.sap.corp:44300/sap/opu/odata/sap/CBLD_PROJ_ANALYTIC_SRV/$metadata?sap-client=200&sap-language=EN");
+            //HttpGet httpget = new HttpGet("https://ldcicip.wdf.sap.corp:44300/sap/opu/odata/sap/PDS_UTCOVERAGE_CDS/PDS_UTCOVERAGE?$filter=running_date%20gt%20datetime%272018-08-20T00:00:00%27");
+        	
             System.out.println("Executing request " + httpget.getRequestLine());
             CloseableHttpResponse response = httpclient.execute(httpget);
             try {
