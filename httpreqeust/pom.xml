@@ -40,6 +40,13 @@
 		    <version>2.32</version>
 		</dependency>
 		
+		<!-- JSON conversion -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20180130</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
