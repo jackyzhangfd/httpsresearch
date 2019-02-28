@@ -2,3 +2,10 @@
 2018-08-14 16:55:10,638 - Unauthorized
 2018-08-14 17:14:13,382 - statusCode=[403] contentType=[]
 2018-08-14 17:14:13,388 - Forbidden
+2019-02-28 21:21:10,549 - Logging initialized @461ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-28 21:21:30,609 - Logging initialized @971ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-28 21:23:23,565 - Logging initialized @441ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-28 21:30:12,369 - Logging initialized @479ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-28 21:41:33,238 - Logging initialized @469ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-28 21:49:09,578 - Logging initialized @502ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-28 21:50:58,096 - Logging initialized @428ms to org.eclipse.jetty.util.log.Slf4jLog
